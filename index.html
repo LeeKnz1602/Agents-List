@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIST DEVICES DATA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:,">
+  </head>
+  <body>
+    <div class="container">
+      <h1>LIST DEVICES</h1>
+      <h2>Blue<span>Orange</span></h2>
+      <div class="search-group">
+        <input type="text" id="cari" placeholder="Search" onkeyup="cariData()" />
+        <button onclick="refreshData()">Refresh</button>
+      </select>
+    </div> 
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>  
+          <th>AGENT</th>
+          <th>DRIVER</th>
+          <th>BANK</th>
+          <th>SERIAL</th>
+          <th>NOTE</th>
+          <th>SERVER</th>
+        </tr>
+      </thead>
+      <tbody id="data-body"></tbody>
+    </table>
+  </div>
+  
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!-- <select id="server-select" onchange="refreshData()">
+  <option value="1">Server 1</option> -->
+<!-- <th>Action</th> -->
+
+<!-- <div class="form-group">
+  <input type="text" id="nama" placeholder="agent" />
+  <input type="number" id="device" placeholder="device" />
+  <input type="int" id="serial" placeholder="Serial number" />
+  <button class="btn-tambah" onclick="tambahData()">Tambah</button>
+</div> -->
+
+  <!-- <div id="editModal" class="modal">
+    <div class="modal-content">
+    <h2>Edit Data</h2>
+    <label>Nama:</label>
+    <input type="text" id="editNama"><br><br>
+
+    <label>Device:</label>
+    <input type="number" id="editDevice"><br><br>
+
+    <label>Serial:</label>
+    <input type="int" id="editSerial"><br><br>
+ 
+    <label>Note:</label>
+    <input type="text" id="editNote"><br><br>
+
+    <button onclick="saveEdit()">Simpan</button>
+    <button onclick="closeModal()">Batal</button>
+  </div> -->
