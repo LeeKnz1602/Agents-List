@@ -41,16 +41,14 @@ function renderTable(data) {
   });
 }
 
-function cariData(){
- const keyword = 
- document.getElementById("cari").value.toLowerCase().trim();
+function cariData() {
+ const keyword = document.getElementById("cari").value.toLowerCase().trim();
  const hasil = dataList
  .map((item, index) => ({ ...item, originalIndex: index }))
  .filter(
   (item) =>
-  item.device.toLowerCase().includes(keyword) || 
-  item.nama.toLowerCase().includes(keyword) );
+    item.driver.toLowerCase().includes(keyword) || 
+  item.agent.toLowerCase().includes(keyword) 
+  );
   renderTable(hasil, true);
 }
-
-window.onload = refreshData;
